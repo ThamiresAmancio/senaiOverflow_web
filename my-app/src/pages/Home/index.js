@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
-import { Main, FeedContainer, Post, GitsIcon, Profile} from "./styles";
+import { Main, FeedContainer, Post, GitsIcon, Profile,LinkedlnIcon, Actions} from "./styles";
 import Coments from "../../components/coments";
-import { FaLinkedin } from "react-icons/fa";
+;
 
 
 
@@ -35,8 +35,6 @@ function Home(){
             <Header />
             <Main>
                 <Profile>
-                    Profile
-
                     <img src ="https://avatars.githubusercontent.com/u/74717575?v=4"/>
                     <div>
                         <strong>Thamires Amâncio</strong>
@@ -49,16 +47,15 @@ function Home(){
                     </div>
                     <div>
                     <GitsIcon/>
-                    <FaLinkedin/>
+                    <LinkedlnIcon/>
                     </div>
-                    
                 </Profile>
                 <FeedContainer >
                     {posts.map(post => <PostCard post={post} />)}
                 </FeedContainer>
-                <aside>
-                    Actions
-                </aside>
+                <Actions>
+                   <button>Nova postagem</button>
+                </Actions>
             </Main>
         </>
     );

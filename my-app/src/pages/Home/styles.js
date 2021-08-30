@@ -13,14 +13,14 @@ export const GitsIcon = styled(FaGithub)`
 
 
 export const LinkedlnIcon = styled(FaLinkedin)`
-    font-size: 80px;
+    font-size: 40px;
             cursor: pointer;
             transition:.2s;
-
+            margin-left: 15px;
             :hover{
-                color: blue;
+                color: var(--primary);
     }
-`
+`;
 
 export const Main = styled.main`
     margin-top: 60px;
@@ -146,3 +146,28 @@ export const Profile = styled.nav`
 
 `;
 
+export const Actions = styled.aside `
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    >button{
+
+        width: 150px;
+        height: 50px;
+        font-family: sans-serif;
+        font-weight: bold;
+        background-color: #34deeb;
+        color: white;
+        border: none;
+        border-radius: 5px 5px 5px;
+        text-align: center;
+        margin-top: 25px;
+
+        
+        
+    }
+   
+`;
