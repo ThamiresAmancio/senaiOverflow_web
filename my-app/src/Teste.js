@@ -1,18 +1,8 @@
 import { useState } from "react";
 
 // Data binding : LIGAÇÃO DE DADOS
-//
-//
-//
-//
-//
-//
-//
-//
 
 function Teste() {
-
-
     const [contador,setContador] =useState(0);
     const [nomes, setNomes] = useState(["Brayan","Carol","Thamires"]);
     const [nome, setNome] = useState([""]);

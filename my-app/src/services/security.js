@@ -23,12 +23,14 @@ export const getUser = () => {
 };
 
 export const setUser = (user) => {
-  const user = JSON.parse(localStorage.getItem(USER_KEY));
+  const userLocal = JSON.parse(localStorage.getItem(USER_KEY));
 
-  user.user = user;
+  userLocal.user = user;
 
   localStorage.setItem(USER_KEY, JSON.stringify(user));
 };
+
+
 export const isSignedIn = () => {
   //recupero o user do localStorage
   const user = JSON.parse(localStorage.getItem(USER_KEY));
